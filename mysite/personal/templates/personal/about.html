@@ -1,0 +1,36 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+    {% for c in content %}
+	<center>
+        <p>{{c}}
+
+			<div class="container">
+					<div>
+
+								<img src=../../static/personal/img/profile.jpg alt="profile"
+							 style="max-height: 170px;"/>
+
+
+					</div>
+
+				<div></div>
+					<br>
+					<font face="Avenir"
+						<dl>
+
+						  <dt>Danny Andreini</dt>
+						  <dd>Photographer, UI/UX designer, CS/MTEC Student at Rice University. Co-Founder and CDO of Vamonos!
+							  <br>Also a violin player of over 14 years and a lover of chess. Feel free to contact me about any of my work!</dd>
+						</dl>
+					</
+				</div>
+			</div>
+
+
+		</p>
+	</center>
+    {% endfor %}
+
+{% endblock %}
+

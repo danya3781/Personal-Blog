@@ -1,0 +1,10 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+    {% for c in content %}
+        <p>{{c}}
+        <address> <a href="mailto:da30@rice.edu">dandreini@rice.edu</a> </address></p>
+    {% endfor %}
+
+{% endblock %}
+

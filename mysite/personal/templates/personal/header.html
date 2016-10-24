@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Danny Andreini</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+</head>
+
+
+<body>
+	<br>
+		<div>
+			<center>
+				<img src="{% static 'personal/img/personallogo.png' %}" class="responsive-img" style='max-height:200px;' alt="face">
+			</center>
+
+
+		</div>
+	</br>
+<div>
+	<center>
+		<a href="/" class="btn btn-info" role="button">Home</a>
+		<a href="/blog/" class="btn btn-info" role="button">Blog</a>
+		<a href="/about/" class="btn btn-info" role="button">About</a>
+		<a href="/contact/" class="btn btn-info" role="button">Contact</a>
+
+	<br>
+	<br>
+	<br>
+		<a href="http://www.dannyandreini.com" class="btn btn-success" role="button">Photography</a>
+		<a href="http://vamonosapp.io" class="btn btn-success" role="button">UI/UX</a>
+	</center>
+
+</div>
+
+
+
+
+
+
+		<div class="row">
+		  <div class=".col-xs-6 .col-md-4">
+		  <br>
+
+		  <br>
+		   <!-- Great, til you resize. -->
+			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+		<div style="text-align: center;">
+    	<div style="display: inline-block; text-align: left">
+		  <div>
+
+			<div class='container-fluid'>
+
+			   {% block content %}
+			   {% endblock %}
+			</div>
+		  </div>
+		</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
